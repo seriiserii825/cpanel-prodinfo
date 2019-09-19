@@ -42,18 +42,18 @@ $category = wp_get_post_categories(get_the_ID());
 			<?php else: ?>
 			<?php endif; ?>
 
-            <div class="socials">
-                <div class="socials__links"><a
-                            href="<?php echo carbon_get_theme_option('crb_facebook'); ?>"><i
-                                class="fab fa-facebook-f"></i></a><a
-                            href="<?php echo carbon_get_theme_option('crb_twitter'); ?>"><i
-                                class="fab fa-twitter"></i></a><a
-                            href="<?php echo carbon_get_theme_option('crb_linkedin'); ?>"><i
-                                class="fab fa-linkedin-in"></i></a><a id="js-show-address-string" href="#"><i
-                                class="fas fa-link"></i></a></div>
-                <div class="socials__category"><?php echo esc_html__('News', 'bs-prodinfo')
-					?></div>
-            </div>
+<!--            <div class="socials">-->
+<!--                <div class="socials__links"><a-->
+<!--                            href="--><?php //echo carbon_get_theme_option('crb_facebook'); ?><!--"><i-->
+<!--                                class="fab fa-facebook-f"></i></a><a-->
+<!--                            href="--><?php //echo carbon_get_theme_option('crb_twitter'); ?><!--"><i-->
+<!--                                class="fab fa-twitter"></i></a><a-->
+<!--                            href="--><?php //echo carbon_get_theme_option('crb_linkedin'); ?><!--"><i-->
+<!--                                class="fab fa-linkedin-in"></i></a><a id="js-show-address-string" href="#"><i-->
+<!--                                class="fas fa-link"></i></a></div>-->
+<!--                <div class="socials__category">--><?php //echo esc_html__('News', 'bs-prodinfo')
+//					?><!--</div>-->
+<!--            </div>-->
 
             <div class="modal-link" id="js-modal-link">
                 <header class="modal-link__header"><i

@@ -145,14 +145,16 @@ get_header(); ?>
         <h2><?php echo $partners_title; ?></h2>
         <div class="partners-slider-wrap">
             <div class="slider-arrow slider-arrow--left"><img
-                        src="<?php echo get_template_directory_uri(); ?>/site/assets/i/svg/left-arrow.svg"></div>
+                        src="<?php echo get_template_directory_uri(); ?>/site/assets/i/svg/left-arrow-green.svg"></div>
             <div class="slider-arrow slider-arrow--right"><img
-                        src="<?php echo get_template_directory_uri(); ?>/site/assets/i/svg/right-arrow.svg"></div>
+                        src="<?php echo get_template_directory_uri(); ?>/site/assets/i/svg/right-arrow-green.svg"></div>
             <div class="partners-slider" id="js-partners-slider">
                 <?php $partners = carbon_get_theme_option('crb_partners'); ?>
                 <?php foreach($partners as $partner): ?>
                 <div class="partners-slider__item">
-					<img src="<?php echo kama_thumb_src('w=213', $partner['crb_partners_photo']); ?>" alt="">
+                    <a href="<?php echo $partner['crb_partners_link']; ?>">
+                        <img src="<?php echo kama_thumb_src('w=280', $partner['crb_partners_photo']); ?>" alt="">
+                    </a>
                 </div>
                 <?php endforeach; ?>
             </div>

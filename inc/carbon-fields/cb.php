@@ -189,8 +189,9 @@ function crb_attach_theme_options()
 
 			Field::make('complex', 'crb_partners', __('Slider'))
 				->add_fields(array(
-					Field::make('image', 'crb_partners_photo', __('Photo idea'))
-						->set_help_text('213x272'),
+					Field::make('image', 'crb_partners_photo', __('Photo idea')),
+					Field::make('text', 'crb_partners_link', __('Block partners link ro'))
+						->set_help_text('280x272'),
 
 				))
 				->set_layout('tabbed-horizontal')
