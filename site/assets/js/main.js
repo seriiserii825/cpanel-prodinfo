@@ -152,6 +152,12 @@ $(function () {
 		partnersElement.equalHeights();
 	};
 	partnersHeight();
+
+	// let iframeStyles = function () {
+	// 	let iframeContent = $("#js-map iframe").contents();
+	// 	console.log(iframeContent);
+	// };
+	// iframeStyles();
 });
 //islands#grayStretchyIcon
 

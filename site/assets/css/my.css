@@ -7796,7 +7796,9 @@ p {
 	display: -ms-grid;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	color: #999;
+	font-size: 16px;
+	font-weight: bold;
+	color: #2f2e2e;
 	margin-bottom: 34px;
 }
 
@@ -7817,8 +7819,9 @@ p {
 }
 
 .news__item.single .news__block {
-	padding-left: 100px;
-	padding-right: 100px;
+	padding-top: 70px;
+	padding-left: 62px;
+	padding-right: 62px;
 }
 
 .news__item.single .news__item-text p {
@@ -7835,7 +7838,6 @@ p {
 .news__block {
 	padding: 29px 47px;
 	padding-bottom: 26px;
-	border: 1px solid #ccc;
 }
 
 .news__item-header {
@@ -8522,5 +8524,43 @@ body.category-news .benefice {
 	.main-header .logo {
 		width: 260px;
 	}
+	.wpglobus-lang {
+		top: 100px;
+	}
 }
+
+.single-news-intro .section__title-wrap {
+	position: relative;
+	top: 46px;
+	max-width: 736px;
+	color: black;
+	background: white;
+}
+
+.single-news-intro .section__title {
+	padding: 24px;
+	text-align: left;
+	font-size: 43px;
+	letter-spacing: 0;
+	text-transform: none;
+	background: white;
+	z-index: 6;
+}
+
+.single-news-intro .section__title::before,
+.single-news-intro .section__title::after {
+	display: none;
+}
+.single-news-intro .section__title--after {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	width: 100%;
+	height: 100%;
+	border: 3px solid #13D68F;
+	z-index: 3;
+}
+
+
+
 

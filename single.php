@@ -3,25 +3,26 @@ get_header();
 $category = wp_get_post_categories(get_the_ID());
 ?>
 
-    <section class="page-intro"
-             style="background-image: url('<?php echo carbon_get_term_meta($category[0], 'crb_intro_single_bg'); ?>')">
-        <h1 class="section__title"><?php the_title(); ?></h1>
+    <section class="page-intro single-news-intro" style="background-image: url('<?php echo carbon_get_term_meta($category[0], 'crb_intro_single_bg'); ?>')">
+        <div class="section__title-wrap">
+            <h1 class="section__title"><?php the_title(); ?></h1>
+            <div class="section__title--after"></div>
+        </div>
     </section>
     <div class="news__item single">
         <div class="news__block">
-            <header class="news__item-header"><img class="news__small-logo"
-                                                   src="<?php echo get_template_directory_uri() ?>/site/assets/i/icons/small-logo.png"
-                                                   alt="">
-                <div class="news__item-data">
-                    <h6 class="news__item-title">Prodinfo ONG</h6>
-                    <img class="news__crown"
-                         src="<?php echo get_template_directory_uri() ?>/site/assets/i/icons/crown.svg" alt=""
-                         title="admin">
-                    <div class="news__item-time"><span
-                                class="news__item-date"><?php echo get_the_date('d M Y'); ?></span> <span>2 min</span>
-                    </div>
-                </div>
-            </header>
+<!--            <header class="news__item-header">-->
+<!--                <img class="news__small-logo" src="--><?php //echo get_template_directory_uri() ?><!--/site/assets/i/icons/small-logo.png" alt="">-->
+<!--                <div class="news__item-data">-->
+<!--                    <h6 class="news__item-title">Prodinfo ONG</h6>-->
+<!--                    <img class="news__crown"-->
+<!--                         src="--><?php //echo get_template_directory_uri() ?><!--/site/assets/i/icons/crown.svg" alt=""-->
+<!--                         title="admin">-->
+<!--                    <div class="news__item-time"><span-->
+<!--                                class="news__item-date">--><?php //echo get_the_date('d M Y'); ?><!--</span> <span>2 min</span>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </header>-->
 
 			<?php if (have_posts()): ?>
 				<?php the_post(); ?>
