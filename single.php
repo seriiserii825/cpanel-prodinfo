@@ -68,15 +68,14 @@ $category = wp_get_post_categories(get_the_ID());
                 </div>
             </div>
             <footer class="news__item-footer">
-                <span class="news__show"><?php do_action('pageviews'); ?><?php echo esc_html__('afisare', 'bs-prodinfo')
-	                ?></span>
+                <span class="news__show"><?php do_action('pageviews'); ?> <?php echo carbon_get_theme_option('crb_afisare'.get_lang());?></span>
                 <span class="news__like">
                     <?php echo do_shortcode('[wp_ulike]'); ?>
                 </span>
             </footer>
         </div>
     </div>
-    <section class="last-posts">
+    <section class="last-posts" id="js-last-posts">
         <header class="last-posts__header">
             <h4 class="last-posts__title"><?php echo esc_html__('Last Posts', 'bs-prodinfo')
 				?></h4><a class="last-posts__link" href="#"><?php echo esc_html__('Show all', 'bs-prodinfo')
@@ -97,9 +96,8 @@ $category = wp_get_post_categories(get_the_ID());
                         <div class="last-posts__text">
                             <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
                             <footer class="news__item-footer">
-                                <span class="news__show"><i
-                                            class="fas fa-eye"></i> <?php do_action('pageviews'); ?></span>
-                                <a class="news__comment-link" href="#">
+                                <span class="news__show"><i class="fas fa-eye"></i> <?php do_action('pageviews'); ?></span>
+                                <a class="news__comment-link" href="<?php the_permalink(); ?>">
 									<?php echo esc_html__('Write a comment', 'bs-prodinfo') ?>
                                 </a>
                                 <span class="news__like">

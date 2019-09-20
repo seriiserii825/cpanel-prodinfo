@@ -28,6 +28,14 @@ function crb_attach_theme_options()
 			Field::make('text', 'crb_facebook', __('Facebook')),
 			Field::make('text', 'crb_twitter', __('Twitter')),
 			Field::make('text', 'crb_linkedin', __('Linked in')),
+		))
+		->add_tab(__('Translate'), array(
+			Field::make('text', 'crb_afisare_ro', __('afisare_ro'))
+				->set_width(30),
+			Field::make('text', 'crb_afisare_ru', __('afisare_ru'))
+				->set_width(30),
+			Field::make('text', 'crb_afisare_en', __('afisare_en'))
+				->set_width(30),
 		));
 
 	// Add second options page under 'Basic Options'

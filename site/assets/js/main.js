@@ -146,15 +146,27 @@ $(function () {
 	};
 	partnersHeight();
 
+	let lastPostsHeight = function(){
+		$('#js-last-posts .last-posts__text h3').equalHeights();
+	};
+	lastPostsHeight();
+
 	let mainMenuActiveElemOfSubMenu = function () {
 		let url = location.href;
 		let news = 'news';
 
 		if(url.includes(news)) {
-			$('#js-main-menu li:nth-child(4)').addClass('current-menu-item');
+			$('#js-main-menu li:nth-child(5)').addClass('current-menu-item');
 		}
 	};
 	mainMenuActiveElemOfSubMenu();
+
+	let removeClassActiveOfSecondMenuELem = function () {
+		if($('#js-main-menu li:first-child').hasClass('current-menu-item')){
+			$('#js-main-menu li:nth-child(2)').removeClass('current-menu-item');
+		}
+	};
+	removeClassActiveOfSecondMenuELem();
 });
 //islands#grayStretchyIcon
 

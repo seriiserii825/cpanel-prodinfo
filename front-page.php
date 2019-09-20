@@ -128,8 +128,8 @@ get_header(); ?>
     <div class="idea-slider" id="js-idea-slider">
 		<?php $idea_images = carbon_get_theme_option('crb_idea'); ?>
 		<?php foreach ($idea_images as $img): ?>
-            <div class="idea-slider__item">
-	            <?php echo kama_thumb_img('w=1349 &h=248', $img['crb_idea_photo']) ?>
+            <div class="idea-slider__item" style="background-image: url('<?php echo kama_thumb_src('w=1920 &h=948', $img['crb_idea_photo']) ?>');">
+<!--	            --><?php //echo kama_thumb_img('w=1349 &h=248', $img['crb_idea_photo']) ?>
             </div>
 		<?php endforeach; ?>
     </div>
