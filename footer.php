@@ -46,9 +46,9 @@
 </footer>
 <div class="footer-buttons">
     <a target="_blank" class="footer-buttons__phone" href="tel:<?php echo $phoneClear; ?>"><i class="fas fa-phone"></i></a>
-    <a target="_blank" class="footer-buttons__facebook" href="<?php echo carbon_get_theme_option('crb_facebook'); ?>"><i class="fab fa-facebook-square"></i></a>
+    <a target="_blank" class="footer-buttons__facebook" href="https://msng.link/fm/euconsult.md"><i class="fab fa-facebook-square"></i></a>
 </div>
-<a target="_blank" href="https://www.messenger.com/t/prodinfo.md" class="messenger">
+<a target="_blank" href="https://msng.link/fm/euconsult.md" class="messenger">
     <img src="<?php echo get_template_directory_uri().'/site/assets/i/MESSENGER.png'; ?>" alt="">
 </a>
 <a href="#" id="js-up" class="up"><img src="<?php echo get_template_directory_uri().'/site/assets/i/svg/up-arrow.svg'; ?>" alt=""></a>
