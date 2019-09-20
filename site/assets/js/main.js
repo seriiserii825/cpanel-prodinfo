@@ -146,11 +146,15 @@ $(function () {
 	};
 	partnersHeight();
 
-	// let iframeStyles = function () {
-	// 	let iframeContent = $("#js-map iframe").contents();
-	// 	console.log(iframeContent);
-	// };
-	// iframeStyles();
+	let mainMenuActiveElemOfSubMenu = function () {
+		let url = location.href;
+		let news = 'news';
+
+		if(url.includes(news)) {
+			$('#js-main-menu li:nth-child(4)').addClass('current-menu-item');
+		}
+	};
+	mainMenuActiveElemOfSubMenu();
 });
 //islands#grayStretchyIcon
 
