@@ -59,7 +59,9 @@
 <script src="assets/libs/html5shiv/respond.min.js"></script>
 <!--<![endif]-->
 <?php wp_footer(); ?>
+
 </body>
 </html>
+
 
 

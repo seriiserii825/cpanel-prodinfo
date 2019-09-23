@@ -4,6 +4,15 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta charset="utf-8">
 	<?php wp_head(); ?>
+
+	<?php if(get_lang() == '_ru'): ?>
+        <script src="//code.jivosite.com/widget.js" data-jv-id="wX71fz61DE" async></script>
+	<?php elseif(get_lang() == '_en'): ?>
+        <script src="//code.jivosite.com/widget.js" data-jv-id="P43ez9KmNM" async></script>
+	<?php else:  ?>
+        <script src="//code.jivosite.com/widget.js" data-jv-id="3t1XznI7YB" async></script>
+	<?php endif; ?>
+
 </head>
 <body <?php body_class(); ?>>
 
