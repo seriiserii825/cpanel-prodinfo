@@ -28,11 +28,11 @@ $(function () {
 
 		});
 
-		$('.main-slider-arrows .slider-arrow--left').click(function () {
+		$('.main-slider-arrows .slider-arrow--right').click(function () {
 			slider.slick('slickNext');
 		});
 
-		$('.main-slider-arrows .slider-arrow--right').click(function () {
+		$('.main-slider-arrows .slider-arrow--left').click(function () {
 			slider.slick('slickPrev');
 		});
 	};
@@ -67,11 +67,11 @@ $(function () {
 			]
 
 		});
-		$('.partners-slider-wrap .slider-arrow--left').click(function () {
+		$('.partners-slider-wrap .slider-arrow--right').click(function () {
 			slider.slick('slickNext');
 		});
 
-		$('.partners-slider-wrap .slider-arrow--right').click(function () {
+		$('.partners-slider-wrap .slider-arrow--left').click(function () {
 			slider.slick('slickPrev');
 		});
 	};
