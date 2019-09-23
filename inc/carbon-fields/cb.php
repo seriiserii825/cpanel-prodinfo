@@ -171,6 +171,13 @@ function crb_attach_theme_options()
 			Field::make('textarea', 'crb_idea_subtitle_en', __('Block idea subtitle en', 'bs-prodinfo1'))
 				->set_width(30),
 
+			Field::make('text', 'crb_idea_link_ro', __('Block idea link ro', 'bs-prodinfo1'))
+				->set_width(30),
+			Field::make('text', 'crb_idea_link_ru', __('Block idea link ru', 'bs-prodinfo1'))
+				->set_width(30),
+			Field::make('text', 'crb_idea_link_en', __('Block idea link en', 'bs-prodinfo1'))
+				->set_width(30),
+
 			Field::make('text', 'crb_idea_button_ro', __('Block idea button ro', 'bs-prodinfo1'))
 				->set_width(30),
 			Field::make('text', 'crb_idea_button_ru', __('Block idea button ru', 'bs-prodinfo1'))

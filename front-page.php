@@ -136,7 +136,7 @@ get_header(); ?>
     <div class="idea__content">
         <h2><?php echo carbon_get_theme_option('crb_idea_title'.get_lang()); ?></h2>
         <p><?php echo carbon_get_theme_option('crb_idea_subtitle'.get_lang()); ?></p>
-        <a class="btn large" href="https://www.euconsult.md/idei-afaceri" target="_blank"><?php echo carbon_get_theme_option('crb_idea_button'.get_lang()); ?></a>
+        <a class="btn large" href="<?php echo carbon_get_theme_option('crb_idea_link'.get_lang()); ?>" target="_blank"><?php echo carbon_get_theme_option('crb_idea_button'.get_lang()); ?></a>
     </div>
 </div>
 <div class="partners">

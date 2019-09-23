@@ -5,11 +5,11 @@
     <meta charset="utf-8">
 	<?php wp_head(); ?>
 
-	<?php if(get_lang() == '_ru'): ?>
+	<?php if (get_lang() == '_ru'): ?>
         <script src="//code.jivosite.com/widget.js" data-jv-id="wX71fz61DE" async></script>
-	<?php elseif(get_lang() == '_en'): ?>
+	<?php elseif (get_lang() == '_en'): ?>
         <script src="//code.jivosite.com/widget.js" data-jv-id="P43ez9KmNM" async></script>
-	<?php else:  ?>
+	<?php else: ?>
         <script src="//code.jivosite.com/widget.js" data-jv-id="3t1XznI7YB" async></script>
 	<?php endif; ?>
 
@@ -47,8 +47,6 @@
                 <a class="logo" href="<?php echo home_url(); ?>">
 					<?php
 					$logo_png = carbon_get_theme_option('crb_logo_png');
-					//					vardump($logo_png);
-
 					?>
 					<?php if (!empty($logo_png)): ?>
                         <img src="<?php echo $logo_png; ?>" alt="">
