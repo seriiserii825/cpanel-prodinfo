@@ -8,7 +8,7 @@ use Carbon_Fields\Field;
 add_action('carbon_fields_register_fields', 'crb_attach_theme_options');
 function crb_attach_theme_options()
 {
-	$basic_options_container = Container::make('theme_options', __('Basic Options'))
+	$basic_options_container = Container::make('theme_options', __('Carbon Fields'))
 		->add_tab(__('Images'), array(
 			Field::make('image', 'crb_logo_png', __('Logo png'))
 				->set_value_type('url'),

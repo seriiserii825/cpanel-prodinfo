@@ -6920,7 +6920,7 @@ p {
 	.member__content {
 		grid-template-columns: repeat(2, 1fr);
 		margin: 0 auto 70px;
-		max-width: 620px;
+		max-width: 590px;
 	}
 }
 
@@ -7071,6 +7071,10 @@ p {
 
 .directions__center h4 {
 	margin-bottom: 12px;
+}
+.directions__center img {
+	width: 92px;
+	height: 92px;
 }
 .directions .btn {
 	padding-left: 24px;
@@ -8452,12 +8456,14 @@ body.category-news .benefice {
 		font-size: 13px;
 	}
 	.member__content {
+		grid-template-columns: repeat(2, 196px);
 		margin-bottom: 30px;
+		max-width: 400px;
 	}
 	.member__item {
 		margin: 0;
 		width: 100%;
-		height: auto;
+		height: 200px;
 		background-size: cover;
 	}
 	.member__text {
@@ -8494,7 +8500,7 @@ body.category-news .benefice {
 		height: 200px;
 	}
 	.directions__center h4 {
-		font-size: 19px;
+		font-size: 16px;
 	}
 
 	.directions__content {
@@ -8622,6 +8628,24 @@ body.category-news .benefice {
 	}
 }
 
+@media screen and (max-width: 430px) {
+	.member__content {
+		grid-template-columns: repeat(2, 150px);
+		max-width: 310px;
+	}
+	.member__item {
+		height: 154px;
+	}
+	.member__item img {
+		top: 15px;
+		margin-bottom: 20px;
+	}
+	.member__text {
+		padding: 10px;
+		padding-top: 0;
+	}
+}
+
 
 @media screen and (max-width: 400px) {
 	.main-header .logo {
@@ -8708,7 +8732,7 @@ body.category-news .benefice {
 }
 
 .partners-slider__item img{
-	height: 70px;
+	width: 220px;
 }
 
 .socials-bottom {

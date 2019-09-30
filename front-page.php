@@ -68,7 +68,7 @@ get_header(); ?>
                     }
 				?>
                 <div class="offers__item <?php echo $offers_class; ?>">
-                    <img src="<?php echo kama_thumb_src('w=100 &h=100', $offer['crb_offers_photo']); ?>" alt="">
+                    <img src="<?php echo kama_thumb_src('w=300 &h=300', $offer['crb_offers_photo']); ?>" alt="">
 
                     <div class="offers__text">
                         <h3><?php echo $offer['crb_offers_item_title' . get_lang()]; ?></h3>
@@ -115,7 +115,7 @@ get_header(); ?>
 
                     <div class="directions__center">
                         <h4><?php echo $direction['crb_directions_item_title' . get_lang()]; ?></h4>
-                        <img src="<?php echo kama_thumb_src('w=92 &h=92', $direction['crb_directions_photo']) ?>"
+                        <img src="<?php echo kama_thumb_src('w=400 &h=400', $direction['crb_directions_photo']) ?>"
                              alt="">
                     </div>
                 </div>
